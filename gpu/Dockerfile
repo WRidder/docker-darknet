@@ -64,8 +64,8 @@ RUN \
     # Install
     && make install \
     && rm /${OPENCV_VERSION}.zip \
-    && rm -r /opencv-${OPENCV_VERSION}
-RUN echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf && ldconfig
+    && rm -r /opencv-${OPENCV_VERSION} \
+    && echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf && ldconfig
 
 # Pull, configure, and compile darknet
 RUN \
