@@ -5,6 +5,7 @@ Darknet images with cpu and gpu support.
 Pull this repository
 ```bash
 $ git clone git@github.com:WRidder/docker-darknet.git 
+$ cd docker-darknet
 ```
 From the root folder of the repository, execute:
 ```bash
@@ -12,7 +13,7 @@ From the root folder of the repository, execute:
 ```
 So, for example:
 ```bash
-$ ./gpu/detect.sh cfg/yolov3-tiny.cfg data/yolov3-tiny.weights data/dog2.jpg predictions
+$ ./detect.sh cfg/yolov3-tiny.cfg data/yolov3-tiny.weights data/dog2.jpg predictions
 ```
 
 ## Building
